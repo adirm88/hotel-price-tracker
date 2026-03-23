@@ -44,6 +44,11 @@ The extension will automatically check prices every hour and notify you when pri
 - `popup.js` - Popup logic and UI interactions
 - `styles.css` - Popup styling
 
+## Screenshots
+
+![Search Interface](screenshots/search-interface.png)
+![Search Results](screenshots/search-results.png)
+
 ## Permissions
 
 - `storage` - Save tracked hotels locally
