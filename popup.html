@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>🏨 Hotel Price Tracker</h2>
+
+    <div class="form-group">
+      <label>Hotel Name:</label>
+      <input type="text" id="hotelName" placeholder="e.g., Hilton Garden Inn">
+    </div>
+
+    <div class="form-group">
+      <label>City/Location:</label>
+      <input type="text" id="location" placeholder="e.g., San Francisco, CA">
+    </div>
+
+    <div class="form-group">
+      <label>Check-in Date:</label>
+      <input type="date" id="checkinDate">
+    </div>
+
+    <div class="form-group">
+      <label>Check-out Date:</label>
+      <input type="date" id="checkoutDate">
+    </div>
+
+    <div class="form-group">
+      <label>Number of Adults:</label>
+      <input type="number" id="numAdults" value="2" min="1" max="10">
+    </div>
+
+    <div class="form-group">
+      <label>Number of Children:</label>
+      <input type="number" id="numChildren" value="0" min="0" max="10">
+    </div>
+
+    <div class="form-group">
+      <label>Booking Sites:</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" class="site-checkbox" value="booking" checked> Booking.com</label>
+        <label><input type="checkbox" class="site-checkbox" value="hotels"> Hotels.com</label>
+        <label><input type="checkbox" class="site-checkbox" value="expedia"> Expedia.com</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Target Price (optional):</label>
+      <input type="number" id="targetPrice" placeholder="Alert when below this price">
+    </div>
+
+    <button id="searchBtn">Search & Track Hotel</button>
+
+    <div id="searchResults" class="hidden">
+      <h3>Search Results</h3>
+      <div id="resultsList"></div>
+    </div>
+
+    <div id="trackedHotels">
+      <h3>Tracked Hotels</h3>
+      <div id="hotelList"></div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

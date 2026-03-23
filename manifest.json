@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Hotel Price Tracker",
+  "version": "1.0.0",
+  "description": "Track hotel prices across booking sites",
+  "permissions": [
+    "storage",
+    "alarms",
+    "notifications",
+    "activeTab",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://www.booking.com/*",
+    "https://www.hotels.com/*",
+    "https://www.expedia.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
